@@ -1,16 +1,18 @@
 {
   "type": "micro",
-  "wake_word": "Hey Potato",
-  "author": "Kevin Ahrendt",
-  "website": "https://www.kevinahrendt.com/",
+  "wake_word": "hey potato",
+  "author": "blake",
+  "website": "https://github.com/OHF-Voice/micro-wake-word",
   "model": "hey_potato.tflite",
-  "trained_languages": ["en"],
+  "trained_languages": [
+    "en"
+  ],
   "version": 2,
   "micro": {
-    "probability_cutoff": 0.5,
+    "probability_cutoff": 0.69,
+    "sliding_window_size": 3,
     "feature_step_size": 10,
-    "sliding_window_size": 5,
-    "tensor_arena_size": 21000,
+    "tensor_arena_size": 30000,
     "minimum_esphome_version": "2024.7.0"
   }
 }
